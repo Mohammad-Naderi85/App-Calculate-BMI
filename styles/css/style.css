@@ -1,0 +1,145 @@
+/* Css Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Vazir";
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Vazir";
+    font-size: 100%;
+    background-image: url(../../images/ball-wed.svg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #ccc;
+}
+
+/* Container */
+.form-container {
+    width: 400px;
+    height: 400px;
+    max-width: 450px;
+    background-color: rgba(235, 235, 231, 0.726);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, .1);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Title */
+.form-container h1 {
+    color: #3b3939;
+    letter-spacing: 1px;
+    padding: 15px 0 15px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Forms */
+form {
+    position: relative;
+    margin: 0 auto;
+}
+
+form .form-group {
+    display: flex;
+}
+/* Inputs */
+form .form-group input {
+    padding: 5px 40px;
+    margin: 10px 5px;
+    outline: 0;
+    color: #292626;
+    border-radius: 30px;
+    width: 300px;
+    height: 45px;
+    background: transparent;
+    max-width: 100%;
+    opacity: .8;
+    border: 2px solid #474747;
+}
+form .form-group input:focus,
+form .form-group input:hover {
+    opacity: 1;
+}
+
+
+form .form-group input::placeholder {
+    color: #000;
+    font-family: "Vazir";
+}
+
+form .form-group i {
+    transform: translate(-34px, 25px);
+    color: #827272;
+}
+
+/* Validate Field */
+form .form-group input:focus:valid {border: 2px solid green;}
+form .form-group input:focus:invalid {border: 2px solid red;}
+
+
+/* Button */
+.btns {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+}
+.btn-submit {
+    border: 0;
+    outline: 0;
+    background-color: #4f4fca;
+    color: #fff;
+    padding: 10px 15px;
+    width: 300px;
+    margin: 20px 22px;
+    border-radius: 30px;
+    font-family: "Vazir";
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: #2525ee;
+}
+.btn-submit:active {
+    transform: scale(.965);
+    background-color: #3f86e4;
+}
+/* Icon Button */
+.btns .btn-submit i {
+    margin-left: 5px;
+    color: #ece7e7;
+}
+
+/* Output BMI */
+#output {
+    background-color: #ff0000d1;
+    border: 3px solid #d81111;
+    width: 73%;
+    display: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+}
